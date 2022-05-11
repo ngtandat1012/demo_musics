@@ -127,12 +127,14 @@ const app = {
         const cdWidth = cd.offsetWidth
 
         //xử lý cd quay / dừng
-        const cdThumbAnimate = cdThumb.animate([
-            { transform: 'rotate(360deg)'}
-        ],{
-            duration: 10000,
-            iteration: Infinity
-        })
+        const cdThumbAnimate = cdThumb.animate(
+         [{
+                transform: 'rotate(360deg)'
+            }], {
+                iterations: Infinity,
+                duration: 9000
+            }
+        )
         cdThumbAnimate.pause()
 
 
